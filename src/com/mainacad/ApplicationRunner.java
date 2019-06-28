@@ -23,6 +23,7 @@ public class ApplicationRunner {
 
         maxShape = circle;
 
+
         if (maxShape.getArea() < square.getArea()) {
             maxShape = square;
         } else if(maxShape.getArea() < triangle.getArea()) {
