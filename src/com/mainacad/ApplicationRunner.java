@@ -19,6 +19,7 @@ public class ApplicationRunner {
         Square square = new Square(15);
         Triangle triangle = new Triangle(12, 15);
         Quadrilateral quadrilateral = new Quadrilateral(22, 33);
+        Rectangle rectangle = new Rectangle( 43, 34);
 
         maxShape = circle;
 
@@ -28,6 +29,8 @@ public class ApplicationRunner {
            maxShape = triangle;
         } else if(maxShape.getArea() < quadrilateral.getArea()) {
             maxShape = square;
+        }else if(maxShape.getArea() < rectangle.getArea()) {
+            maxShape = rectangle;
         }
 
         System.out.println("Max shape has area " + maxShape.getArea());
