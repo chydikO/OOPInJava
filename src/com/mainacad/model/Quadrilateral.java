@@ -4,6 +4,13 @@ public class Quadrilateral extends Square{
 
     private double base;
 
+    public Quadrilateral() {
+    }
+
+    public Quadrilateral(double side, double base) {
+        super(side);
+        this.base = base;
+    }
     public double getBase() {
         return base;
     }
@@ -17,11 +24,4 @@ public class Quadrilateral extends Square{
         return base * getSide();
     }
 
-    public Quadrilateral(double side, double base) {
-        super(side);
-        this.base = base;
-    }
-
-    public Quadrilateral() {
-    }
 }

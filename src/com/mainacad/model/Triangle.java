@@ -6,6 +6,14 @@ public class Triangle extends AbstractShape{
 
     private double heigth;
 
+    public Triangle() {
+    }
+
+    public Triangle(double base, double heigth) {
+        this.base = base;
+        this.heigth = heigth;
+    }
+
     public double getBase() {
         return base;
     }
@@ -18,7 +26,7 @@ public class Triangle extends AbstractShape{
         return heigth;
     }
 
-    public void setHeigth(double heigth) {
+    public void setHeight(double heigth) {
         this.heigth = heigth;
     }
 
@@ -27,11 +35,5 @@ public class Triangle extends AbstractShape{
         return (base * heigth) / 2;
     }
 
-    public Triangle(double base, double heigth) {
-        this.base = base;
-        this.heigth = heigth;
-    }
 
-    public Triangle() {
-    }
 }

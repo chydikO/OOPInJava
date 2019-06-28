@@ -4,6 +4,13 @@ public class Circle extends AbstractShape{
 
     private double radius;
 
+    public Circle() {
+    }
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
     public double getRadius() {
         return radius;
     }
@@ -17,10 +24,4 @@ public class Circle extends AbstractShape{
         return Math.PI * radius * radius;
     }
 
-    public Circle(double radius) {
-        this.radius = radius;
-    }
-
-    public Circle() {
-    }
 }
