@@ -26,11 +26,11 @@ public class ApplicationRunner {
 
         if (maxShape.getArea() < square.getArea()) {
             maxShape = square;
-        } else if(maxShape.getArea() < triangle.getArea()) {
+        } if(maxShape.getArea() < triangle.getArea()) {
            maxShape = triangle;
-        } else if(maxShape.getArea() < quadrilateral.getArea()) {
+        } if(maxShape.getArea() < quadrilateral.getArea()) {
             maxShape = square;
-        }else if(maxShape.getArea() < rectangle.getArea()) {
+        } if(maxShape.getArea() < rectangle.getArea()) {
             maxShape = rectangle;
         }
 
